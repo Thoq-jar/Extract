@@ -5,14 +5,15 @@ import torch
 import numpy as np
 import platform
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda (GPU)" if torch.cuda.is_available() else "cpu")
+
 print(f"Extract >> Using {device} for extraction")
-print(f"Extract >> GPU: {'Will not be used' if device == 'cuda' else 'Will be used'}")
 print(f"Extract >> System: {platform.system()} {platform.release()}")
 print(f"Extract >> CUDA Available: {torch.cuda.is_available()}")
 print(f"Extract >> CUDA Version: {torch.version.cuda}")
-print(f"Extract >> Current Device: {torch.cuda.current_device()}")
-print(f"Extract >> Device Name: {torch.cuda.get_device_name(0)}")
+if (torch.cuda.is_available()):
+    print(f"Extract >> Current Device: {torch.cuda.current_device()}")
+    print(f"Extract >> Device Name: {torch.cuda.get_device_name(0)}")
 
 def extract_file_gpu(zip_file, member, output_dir):
     with open(zip_file, 'rb') as f:
