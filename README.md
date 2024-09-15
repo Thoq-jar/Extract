@@ -17,7 +17,8 @@ source venv/bin/activate
 ```
 ```cmd
 pip install numpy
-pip install pytorch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install pytorch
+pip install torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 ```cmd
 python Extract/extract.py
@@ -38,7 +39,8 @@ python -m venv venv
 ```
 ```cmd
 pip install numpy
-pip install pytorch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install pytorch
+pip install torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 ```cmd
 python Extract/extract.py
