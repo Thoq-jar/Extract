@@ -38,8 +38,7 @@ python -m venv venv
 ```
 ```cmd
 pip install numpy
-pip install pytorch
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install pytorch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 ```cmd
 python Extract/extract.py
