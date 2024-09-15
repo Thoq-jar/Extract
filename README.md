@@ -13,7 +13,7 @@ Prerequisites:
 python3 -m venv venv
 ```
 ```cmd
-source venv/bin/acitvate
+source venv/bin/activate
 ```
 ```cmd
 pip install numpy
