@@ -5,7 +5,7 @@ import torch
 import numpy as np
 import platform
 
-device = torch.device("cuda (GPU)" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 print(f"Extract >> Using {device} for extraction")
 print(f"Extract >> System: {platform.system()} {platform.release()}")
