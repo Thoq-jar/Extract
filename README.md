@@ -31,14 +31,8 @@ Prerequisites:
 - Powershell
 
 ```cmd
-python -m venv venv
-```
-```cmd
-.\venv\Scripts\Activate.ps1
-```
-```cmd
 pip install numpy
-pip install pytorch
+pip install torch
 pip install torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 ```cmd
